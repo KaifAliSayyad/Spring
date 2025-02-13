@@ -121,10 +121,6 @@ class CalculatorTest {
 	}
 	
 	
-	
-	
-	
-	
 	@AfterAll							//Older version : @AfterClass
 	void removeCalculator() {
 		c1 = null;
