@@ -3,9 +3,6 @@ import java.lang.NullPointerException;
 
 public class Calculator implements Demo {
 
-	public Calculator() {
-		System.out.println("<----- Calculator Object created ----->");
-	}
 	public int add(int a, int b) {
 		return a+b;
 	}
