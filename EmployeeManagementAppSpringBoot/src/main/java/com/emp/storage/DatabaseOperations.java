@@ -29,8 +29,8 @@ public class DatabaseOperations {
             rs.updateString("name", emp.getName());
             rs.updateInt("age", emp.getAge());
             rs.updateFloat("salary", emp.getSalary());
-            rs.updateInt("designation",emp.getDesignation());
-            rs.updateInt("department", emp.getDepartment());
+            rs.updateInt("designation",emp.getDesignation().toString());
+            rs.updateInt("department", emp.getDepartment().toString());
             rs.insertRow();
 
             System.out.println("Employee added to the database.");

@@ -17,8 +17,8 @@ import com.emp.storage.DatabaseOperations;
 
 @SpringBootApplication
 public class EmployeeManagementAppSpringBootApplication {
-	private static Map<Integer, String> designations = new HashMap<>();
-	private static Map<Integer, String> departments = new HashMap<>();
+	public static Map<Integer, String> designations = new HashMap<>();
+	public static Map<Integer, String> departments = new HashMap<>();
 	
 
 	public static void main(String[] args) {
