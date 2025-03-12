@@ -1,0 +1,48 @@
+<div class="employee-content">
+    <div class="heading">
+        <h2>Employee Creation</h2>
+    </div>
+    <div class="body">
+        <div class="form">
+            <form #empForm="ngForm">
+                <input type="number" name="eid" placeholder="Enter ID" [(ngModel)]="this.es.selectedEmployee.eid" required><br>
+                <input type="text" name="name" placeholder="Enter Name" [(ngModel)]="this.es.selectedEmployee.name" required ><br>
+                <input type="number" name="age" placeholder="Enter Age" [(ngModel)]="this.es.selectedEmployee.age"  required><br>
+                <input type="number" name="salary" placeholder="Enter Salary" [(ngModel)]="this.es.selectedEmployee.salary"  required><br>
+                <input type="text" name="designation" placeholder="Enter Designation" [(ngModel)]="this.es.selectedEmployee.designation"  required><br>
+                <br>
+                <input type="submit" (click)="onSubmit(empForm)" name="submit" value="SUBMIT">
+                <input type="button" name="reset" value="RESET">
+            </form>
+        </div>
+        <div class="show">
+            <h2>Employee Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>EID</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Salary</th>
+                        <th>Designation</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (emp of this.es.employees; track emp.eid) {
+                        <tr>
+                            <td>{{emp.eid}}</td>
+                            <td>{{emp.name}}</td>
+                            <td>{{emp.age}}</td>
+                            <td>{{emp.salary}}</td>
+                            <td>{{emp.designation}}</td>
+                            <td> <input id="edit-button" type="button" (click)="updateEmp(emp)" value="Edit"> </td>
+                            <td> <input id="delete-button" type="button" (click)="deleteEmployee(emp.eid)" value="Delete"> </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

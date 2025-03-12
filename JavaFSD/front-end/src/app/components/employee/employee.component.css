@@ -1,0 +1,126 @@
+/* General body styling */
+body {
+    background-color: aliceblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#delete-button{
+    background-color: red;
+}
+
+#edit-button{
+    background-color: rgba(255, 200, 0, 0.85);
+}
+/* Employee content container */
+.employee-content {
+    width: 100%;
+    margin: 40px auto;
+    background-color: cadetblue;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Heading styling */
+.employee-content .heading h2 {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+/* Form container */
+.employee-content .body .form {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.employee-content .body .form input[type="number"],
+.employee-content .body .form input[type="text"],
+.employee-content .body .form input[type="submit"],
+.employee-content .body .form input[type="button"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid cadetblue;
+    font-size: 16px;
+}
+
+.employee-content .body .form input[type="submit"] {
+    background-color: cadetblue;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.employee-content .body .form input[type="submit"]:hover {
+    background-color: #5f9ea0;
+}
+
+.employee-content .body .form input[type="button"] {
+    background-color: #f0f8ff;
+    color: cadetblue;
+    cursor: pointer;
+    border: none;
+}
+
+.employee-content .body .form input[type="button"]:hover {
+    background-color: cadetblue;
+    color: white;
+}
+
+/* Table container */
+.employee-content .body .show {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 8px;
+    justify-items: center;
+}
+
+.employee-content .body .show table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.employee-content .body .show th,
+.employee-content .body .show td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid cadetblue;
+}
+
+.employee-content .body .show th {
+    background-color: cadetblue;
+    color: white;
+}
+
+.employee-content .body .show td input[type="button"] {
+    width: auto;
+    background-color: cadetblue;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.employee-content .body .show td input[type="button"]:hover {
+    background-color: #5f9ea0;
+}
+
+.form{
+    justify-items: center;
+    text-align: center;
+}
+
+form{
+    width: 50%;
+}
